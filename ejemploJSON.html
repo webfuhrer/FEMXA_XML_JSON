@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<script>
+var txt_json='{"coord":{"lon":-3.7,"lat":40.42},"weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],"base":"stations","main":{"temp":308.71,"feels_like":304.16,"temp_min":307.04,"temp_max":310.15,"pressure":1014,"humidity":14},"visibility":10000,"wind":{"speed":4.6,"deg":220},"clouds":{"all":0},"dt":1593454362,"sys":{"type":1,"id":6443,"country":"ES","sunrise":1593406046,"sunset":1593460138},"timezone":7200,"id":3117735,"name":"Madrid","cod":200}';
+var obj_json=JSON.parse(txt_json);
+
+var temp_min=obj_json.main.temp_min-273;
+var temperatura_maxima=obj_json.main.temp_max-273;
+console.log("temp_min:"+temp_min+", temp_max:"+temperatura_maxima);
+</script>
+
+</head>
+<body>
+
+<p></p>
+</body>
+<script>
+
+</script>
+<html>
